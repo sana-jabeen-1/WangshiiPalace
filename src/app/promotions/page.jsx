@@ -54,7 +54,7 @@ export default function PromotionsPage() {
   return (
     <main>
       <PageHeader
-        backgroundImage="/assets/gallery/promotions-bg.jpg"
+        backgroundImage="/assets/facilities/prom-img.png"
         title="Promotions"
         breadcrumbs={breadcrumbs}
       />

@@ -3,14 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import Banner from "../molecules/Banner";
 import "swiper/swiper-bundle.css";
-import Image from 'next/image';
+
+
 
 
 const Hero = () => {
   const bannerImages = [
     {
       src: "/assets/hero/banner.png",
-      title: "Discover Exceptional Comfort",
+      title: "Exceptional Comfort",
       description:
         "Immerse yourself in our thoughtfully designed rooms featuring modern amenities and elegant decor for an unforgettable stay.",
       cta: [
@@ -21,13 +22,13 @@ const Hero = () => {
         },
         {
           text: "Talk To Us",
-          href: "/contact",
+          href: "/contact-us",
         },
       ],
     },
     {
       src: "/assets/hero/banner-2.jpg",
-      title: "Experience Modern Elegance",
+      title: "Modern Elegance",
       description:
         "Unwind in our premium accommodations where luxury meets contemporary design, creating the perfect retreat for discerning travelers.",
       cta: [
@@ -38,13 +39,13 @@ const Hero = () => {
         },
         {
           text: "Talk To Us",
-          href: "/contact",
+          href: "/contact-us",
         },
       ],
     },
     {
       src: "/assets/hero/banner-2.png",
-      title: "Your Perfect Urban Escape",
+      title: "Perfect Urban Escape",
       description:
         "Discover the ideal balance of sophistication and comfort in our carefully curated spaces designed for both leisure and business travelers.",
       cta: [
@@ -58,7 +59,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen z-1">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
@@ -74,7 +75,7 @@ const Hero = () => {
           <SwiperSlide key={index} className="">
             <Banner
               bannerImage={banner.src}
-              title={banner.title}
+              title={banner.title} 
               description={banner.description}
               cta={banner.cta}
             />

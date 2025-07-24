@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Banner = ({ bannerImage, title, description, cta }) => {
   return (
-    <div className="relative w-full h-screen sm:h-[700px]">
+    <div className="relative w-full h-screen sm:h-[700px] z-10">
       <Image
         src={bannerImage}
         alt="banner image"

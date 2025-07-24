@@ -49,7 +49,8 @@ const Booking = () => {
   };
 
   return (
-    <Card className="absolute -bottom-80 lg:-bottom-6 left-1/2 transform -translate-x-1/2 w-11/12 lg:max-w-7xl rounded-none shadow-xl z-20">
+    
+    <Card className="absolute top-105 -bottom-95 lg:-bottom-6 left-1/2 transform -translate-x-1/2 w-11/12 lg:max-w-7xl rounded-none shadow-xl z-10">
       <CardContent className=";px-6 lg:p-0">
         <div className="flex flex-col lg:flex-row lg:min-h-[160px]">
           {/* Left section - White background */}
@@ -191,6 +192,7 @@ const Booking = () => {
         </div>
       </CardContent>
     </Card>
+    
   );
 };
 

@@ -90,10 +90,10 @@ function MobileNavItem({
 
   if (element.dropdownElements) {
     return (
-      <div className="border-b border-gray-200">
+      <div className="border-b border-gray-200 z-1">
         <button
           onClick={() => setExpandedItem(isExpanded ? null : element.title)}
-          className="w-full flex items-center justify-between py-4 px-6 text-left hover:bg-gray-50 transition-colors"
+          className="w-full flex items-center justify-between py-4 px-6 text-left hover:bg-gray-50 transition-colors z-20"
         >
           <span className="text-[#777777] font-roboto text-sm sm:text-base">
             {element.title}
@@ -105,7 +105,7 @@ function MobileNavItem({
           />
         </button>
         {isExpanded && (
-          <div className="bg-gray-50">
+          <div className="bg-gray-50 z-30">
             {element.dropdownElements.map((dropdownElement, index) => (
               <Link
                 key={index}

@@ -7,7 +7,7 @@ export default function ContactUsPage() {
   return (
     <main>
       <PageHeader
-        backgroundImage="/placeholder.svg?height=400&width=1200"
+        backgroundImage="/assets/facilities/contact.png"
         title="Contact Us"
         breadcrumb={"Contact Us"}
       />
