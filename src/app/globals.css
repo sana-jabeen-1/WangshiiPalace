@@ -119,5 +119,37 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Style for title */
+.banner-title {
+  font-size: 36px; /* Adjust font size */
+  font-weight: bold; 
+  color: #ffffff;  /* Text color */
+  text-align: center; /* Center align title */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+/* Style for description */
+.banner-desc {
+  font-size: 18px;
+  color: #ab1010; /* Light grey text color */
+  text-align: center; /* Center align description */
+  margin-bottom: 30px; /* Space below description */
+}
+
+/* Style for CTA (Call to Action) */
+.banner-cta {
+  background-color: #FF5733; /* Button background color */
+  color: white; /* Text color for the CTA */
+  padding: 15px 30px; /* Padding around the CTA */
+  font-size: 16px; /* Font size for CTA */
+  text-align: center; /* Center the text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.banner-cta:hover {
+  background-color: #FF3D00; /* Darken CTA color on hover */
+}
+
   }
 }

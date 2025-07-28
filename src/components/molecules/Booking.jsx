@@ -49,10 +49,10 @@ const Booking = () => {
   };
 
   return (
-    
-    <Card className="absolute top-105 -bottom-95 lg:-bottom-6 left-1/2 transform -translate-x-1/2 w-11/12 lg:max-w-7xl rounded-none shadow-xl z-10">
-      <CardContent className=";px-6 lg:p-0">
-        <div className="flex flex-col lg:flex-row lg:min-h-[160px]">
+   
+    <Card className="absolute top-077 bottom-0 lg:-bottom-63 lg:p-0 left-1/2 bottom-1/7 transform -translate-x-2/4 -translate-y-1/20 w-10/12 lg:max-w-6xl rounded-none shadow-xl z-20">
+      <CardContent className="py-0 lg:p-2">
+        <div className="flex flex-col lg:flex-row lg:min-h-[100px]">
           {/* Left section - White background */}
           <div className="flex-1 bg-white p-8">
             <div className="grid lg:grid-cols-3 items-center justify-center lg:items-start lg:justify-start gap-8">
@@ -178,7 +178,7 @@ const Booking = () => {
           </div>
 
           {/* Right section - Dark background */}
-          <div className="lg:w-96 bg-gray-900 flex flex-col justify-center items-center text-center py-8">
+          <div className="lg:w-96 bg-gray-900 flex flex-col justify-center items-center text-center py-8 p-10">
             <div className="text-white text-lg mb-6">
               Click below for Booking
             </div>
@@ -192,7 +192,7 @@ const Booking = () => {
         </div>
       </CardContent>
     </Card>
-    
+   
   );
 };
 

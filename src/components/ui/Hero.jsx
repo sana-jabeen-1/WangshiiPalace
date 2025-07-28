@@ -13,7 +13,7 @@ const Hero = () => {
       src: "/assets/hero/banner.png",
       title: "Exceptional Comfort",
       description:
-        "Immerse yourself in our thoughtfully designed rooms featuring modern amenities and elegant decor for an unforgettable stay.",
+        "Immerse yourself in our thoughtfully designed rooms featuring and elegant decor.",
       cta: [
         {
           text: "Book Now",
@@ -30,7 +30,7 @@ const Hero = () => {
       src: "/assets/hero/banner-2.jpg",
       title: "Modern Elegance",
       description:
-        "Unwind in our premium accommodations where luxury meets contemporary design, creating the perfect retreat for discerning travelers.",
+        "luxury meets contemporary design, creating the perfect retreat for discerning travelers.",
       cta: [
         {
           text: "Book Now",
@@ -47,7 +47,7 @@ const Hero = () => {
       src: "/assets/hero/banner-2.png",
       title: "Perfect Urban Escape",
       description:
-        "Discover the ideal balance of sophistication and comfort in our carefully curated spaces designed for both leisure and business travelers.",
+        "Discover the ideal balance of sophistication and comfort in our carefully curated spaces .",
       cta: [
         {
           text: "Accommodations",
@@ -73,11 +73,14 @@ const Hero = () => {
       >
         {bannerImages.map((banner, index) => (
           <SwiperSlide key={index} className="">
-            <Banner
+            <Banner  
               bannerImage={banner.src}
               title={banner.title} 
               description={banner.description}
               cta={banner.cta}
+              titleClass="banner-title"        // Add class for title
+              descriptionClass="banner-desc"   // Add class for description
+              ctaClass="banner-cta"
             />
           </SwiperSlide>
         ))}

@@ -1,3 +1,5 @@
+"use client";
+
 import Booking from "@/components/molecules/Booking";
 import BreakfastMenuSection from "@/components/molecules/Breakfast";
 import FacilitiesSection from "@/components/molecules/Facilities";
@@ -10,8 +12,19 @@ import TestimonialsSection from "@/components/molecules/Testimonials";
 import WhyHireUsSection from "@/components/molecules/WhyHireUs";
 import Hero from "@/components/ui/Hero";
 import RelaxSection from "@/components/ui/Place";
+import { useEffect } from "react";
 
 const Home = () => {
+
+useEffect(() => {
+   
+    document.body.style.overflowX = "hidden";
+    return () => {
+      // Restore if needed on page unmount
+      document.body.style.overflowX = "auto";
+    };
+  }, []);
+
   const rooms = [
     {
       id: 1,
@@ -20,7 +33,7 @@ const Home = () => {
       amenities: ["King & Futon, Shower, Patio, Firepit, Swing"],
       description:
         "Partly Pet Friendly Rooms , If bringing a pet please call ahead",
-      price: "$110.0",
+      price: "$ 294.11",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
     {
@@ -30,7 +43,7 @@ const Home = () => {
       amenities: ["2 Full XL, King & Futon, Jacuzzi, Shower (Wheel Chair Accessible) , Patio, Fire pit, Swing"],
       description:
         "Pet Friendly Room",
-      price: "$165.0",
+      price: "$353.05",
       priceColor: "bg-gray-900 hover:bg-gray-800 text-white",
       hasBookButton: true,
     },
@@ -41,10 +54,9 @@ const Home = () => {
       amenities: ["Full XL & King, Jacuzzi Tub, & Shower, Patio, Fire Pit"],
       description:
         "Pet Friendly Room",
-      price: "$110.0",
+      price: "$329.47",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
-    },
-    
+    }, 
   ];
 
   
@@ -52,9 +64,11 @@ const Home = () => {
   return (
     <div className="font-roboto flex flex-col items-center justify-center">
       <Hero />
-      <Booking />
+      
       <RelaxSection />
+      <Booking />
       <WhyHireUsSection />
+      
       <FacilitiesSection />
       <RoomSection />
       <RoomsPricingSection rooms={rooms} title={"Rooms & Pricing"} />

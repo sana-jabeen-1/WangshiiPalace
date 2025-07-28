@@ -135,7 +135,7 @@ const FacilitiesSection = () => {
           {/* Swiper Container */}
           <div className="hidden lg:block lg:px-16 ">
             <Swiper
-              modules={[Navigation, Pagination]}
+              modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={30}
               slidesPerView={1}
               breakpoints={{
