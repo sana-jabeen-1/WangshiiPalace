@@ -123,7 +123,7 @@
 .banner-title {
   font-size: 36px; /* Adjust font size */
   font-weight: bold; 
-  color: #ffffff;  /* Text color */
+  color: #340303;  /* Text color */
   text-align: center; /* Center align title */
   margin-bottom: 20px; /* Space below the title */
 }
@@ -131,8 +131,8 @@
 /* Style for description */
 .banner-desc {
   font-size: 18px;
-  color: #ab1010; /* Light grey text color */
-  text-align: center; /* Center align description */
+  color: #f9f7f7; /* Light grey text color */
+  text-align: center; /* Center align description */ 
   margin-bottom: 30px; /* Space below description */
 }
 

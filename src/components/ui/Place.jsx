@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 const RelaxSection = () => {
   return (
-    <section className="flex flex-col lg:flex-row mt-72 lg:mt-0 justify-center items-center lg:mx-auto lg:max-w-7xl gap-20 pl-5">
+    <section className="flex flex-col lg:flex-row mt-72 lg:mt-0 justify-center items-center lg:mx-auto lg:max-w-7xl gap-10 lg:pl-5">
       {/* Left Content */}
-      <div className="space-y-6 text-justify w-3/4 lg:w-1/2">
+      <div className="space-y-5 text-justify w-3/4 lg:w-1/2">
         <div className="space-y-4">
-          <h2 className="text-4xl lg:text-6xl font-lora font-medium text-gray-900 llg:eading-tight pt-20 pl-5">
+          <h2 className="text-4xl lg:text-6xl font-lora font-medium text-gray-900 llg:eading-tight lg:pt-20">
             Relax in Our Place
           </h2>
 
@@ -26,32 +26,32 @@ const RelaxSection = () => {
 
         <div className="space-y-6">
           {/* Main paragraph - darker text */}
-          <p className="text-lg text-gray-800 leading-relaxed pl-5">
+          <p className="text-lg text-gray-800 leading-relaxed">
            WangShi is more than just a place to stay—it's a retreat. After a day spent golfing, tennis, shopping,
             or touring local museums, 
            return to your sanctuary to refresh and unwind.
           </p>
 
           {/* Secondary paragraph - lighter text */}
-          <p className="text-base text-gray-500 leading-relaxed pl-5">
+          <p className="text-base text-gray-500 leading-relaxed">
             Celebrate a special occasion, such as a weekend wedding, or simply savor the peace and beauty of the surroundings.
           </p>
 
           {/* Third paragraph - lighter text */}
-          <p className="text-base text-gray-500 leading-relaxed pl-5">
+          <p className="text-base text-gray-500 leading-relaxed">
             Whether you're soaking in the serenity of our scenic walking trails, unwinding in the gazebo, or enjoying a peaceful evening by the fire pits,
              WangShi provides multiple relaxing spots designed to help you escape the everyday hustle.
           </p>
 
           {/* Bottom text */}
-          <p className="text-base text-gray-600 font-medium pt-4 pl-5">
+          <p className="text-base text-gray-600 font-medium pt-4">
             Luxury Hotel & Best Resort Discover our Locations
           </p>
         </div>
       </div>
 
       {/* Right Images Grid */}
-      <div className="flex items-center justify-center ml-20 lg:ml-0 lg:w-1/2">
+      <div className="flex items-center justify-center ml-20 lg:ml-0 lg:w-1/2 lg:pt-20">
         <Image
           src="/assets/relax/image.png"
           alt="Luxury hotel room with red bedding"
