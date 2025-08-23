@@ -5,7 +5,7 @@ const AboutTimelineSection = () => {
     {
       id: 1,
       title: "The Beginning",
-      image: "/assets/about/timeline.jpg",
+      image: "/assets/about/timeline.webp",
       description:
         "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu.",
       position: "right",
@@ -13,7 +13,7 @@ const AboutTimelineSection = () => {
     {
       id: 2,
       title: "The Beginning",
-      image: "/assets/about/timeline-2.jpg",
+      image: "/assets/about/timeline-2.webp",
       description:
         "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu.",
       position: "left",
@@ -21,7 +21,7 @@ const AboutTimelineSection = () => {
     {
       id: 3,
       title: "Member In Hotel Association",
-      image: "/assets/about/timeline-3.jpg",
+      image: "/assets/about/timeline-3.webp",
       description:
         "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.",
       position: "right",
@@ -29,7 +29,7 @@ const AboutTimelineSection = () => {
     {
       id: 4,
       title: "International Standards",
-      image: "/assets/about/timeline-4.jpg",
+      image: "/assets/about/timeline-4.webp",
       description:
         "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.",
       position: "left",

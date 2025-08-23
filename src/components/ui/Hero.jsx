@@ -10,7 +10,7 @@ import "swiper/swiper-bundle.css";
 const Hero = () => {
   const bannerImages = [
     {
-      src: "/assets/hero/banner.png",
+      src: "/assets/hero/banner.webp",
       title: "Exceptional Comfort",
       description:
         "Immerse yourself in our thoughtfully designed rooms featuring and elegant decor.",
@@ -27,7 +27,7 @@ const Hero = () => {
       ],
     },
     {
-      src: "/assets/hero/banner-2.jpg",
+      src: "/assets/hero/bannerr-2.webp",
       title: "Modern Elegance",
       description:
         "luxury meets contemporary design, creating the perfect retreat for discerning travelers.",
@@ -44,7 +44,7 @@ const Hero = () => {
       ],
     },
     {
-      src: "/assets/hero/banner-2.png",
+      src: "/assets/hero/banner-3.webp",
       title: "Perfect Urban Escape",
       description:
         "Discover the ideal balance of sophistication and comfort in our carefully curated spaces .",

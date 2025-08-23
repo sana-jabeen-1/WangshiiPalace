@@ -10,7 +10,7 @@ export default function EventsAtFacilityPage() {
   return (
     <main>
       <PageHeader
-        backgroundImage="/placeholder.svg?height=400&width=1200"
+        backgroundImage="/assets/resources/events.webp"
         title="Events at Facility"
         breadcrumb={"Events at Facility"}
       />

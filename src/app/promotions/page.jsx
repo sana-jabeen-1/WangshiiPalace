@@ -54,7 +54,7 @@ export default function PromotionsPage() {
   return (
     <main>
       <PageHeader
-        backgroundImage="/assets/facilities/prom-img.png"
+        backgroundImage="/assets/facilities/prom-img.webp"
         title="Promotions"
         breadcrumbs={breadcrumbs}
       />

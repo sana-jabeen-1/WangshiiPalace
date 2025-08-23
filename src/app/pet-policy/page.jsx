@@ -6,7 +6,7 @@ export default function PetPolicyPage() {
   return (
     <main>
       <PageHeader
-        backgroundImage="/placeholder.svg?height=400&width=1200"
+        backgroundImage="/assets/resources/pet.webp"
         title="Pet Policy"
         breadcrumb={"Pet Policy"}
       />

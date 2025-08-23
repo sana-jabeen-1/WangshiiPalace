@@ -57,9 +57,29 @@ useEffect(() => {
       price: "$329.47",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     }, 
+    {
+      id: 4,
+      title: "Quadruple Room Type #4",
+      image: "/assets/pricing/room-3.png",
+      amenities: ["Full XL & King, Jacuzzi Tub, & Shower, Patio, Fire Pit"],
+      description:
+        "Pet Friendly Room",
+      price: "$329.47",
+      priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
+    }, 
+    {
+      id: 5,
+      title: "Quadruple Room Type #4",
+      image: "/assets/pricing/room-3.png",
+      amenities: ["Full XL & King, Jacuzzi Tub, & Shower, Patio, Fire Pit"],
+      description:
+        "Pet Friendly Room",
+      price: "$329.47",
+      priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
+    }, 
+    
   ];
 
-  
 
   return (
     <div className="font-roboto flex flex-col items-center justify-center">

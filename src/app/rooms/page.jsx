@@ -132,7 +132,7 @@ const Rooms = () => {
     <div className="">
       <PageHeader
         title={"Rooms"}
-        backgroundImage={"/assets/displayRooms/room-2.jpg"}
+        backgroundImage={"/assets/displayRooms/rooms-b.webp"}
       />
       <RoomsPricingSection rooms={rooms} title={"Rooms"} />
     </div>

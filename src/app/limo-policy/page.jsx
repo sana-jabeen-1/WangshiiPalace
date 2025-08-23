@@ -7,7 +7,7 @@ export default function LimoPolicyPage() {
   return (
     <main>
       <PageHeader
-        backgroundImage="/assets/facilities/limo-img.jpg"
+        backgroundImage="/assets/resources/limo.webp"
         title="Limo Policy"
         breadcrumb={"Limo Policy"}
       />
