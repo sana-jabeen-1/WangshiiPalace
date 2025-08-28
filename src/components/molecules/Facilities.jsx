@@ -25,12 +25,6 @@ const FacilitiesSection = () => {
       title: "Fine Dining",
       description: "Exquisite restaurant with premium cuisine",
     },
-   
-    {
-      image: "/assets/facilities/slider-9.jpg",
-      title: "Fine Dining",
-      description: "Exquisite restaurant with premium cuisine",
-    },
     {
       image: "/assets/facilities/slider-3.png",
       title: "Spa & Wellness",
