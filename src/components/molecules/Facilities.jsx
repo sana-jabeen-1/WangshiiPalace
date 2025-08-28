@@ -16,27 +16,27 @@ const FacilitiesSection = () => {
 
   const facilities = [
     {
-      image: "/assets/facilities/slider.png",
+      image: "/assets/facilities/slider.webp",
       title: "Spa & Wellness",
       description: "Relaxing massage and wellness treatments",
     },
     {
-      image: "/assets/facilities/slider-2.png",
+      image: "/assets/facilities/slider-2.webp",
       title: "Fine Dining",
       description: "Exquisite restaurant with premium cuisine",
     },
     {
-      image: "/assets/facilities/slider-5.jpg",
+      image: "/assets/facilities/slider-3.webp",
       title: "Wellness Center",
       description: "Complete wellness and fitness facilities",
     },
     {
-      image: "/assets/facilities/slider-6.jpg",
+      image: "/assets/facilities/slider-5.webp",
       title: "Fine Dining",
       description: "Exquisite restaurant with premium cuisine",
     },
     {
-      image: "/assets/facilities/slider-3.png",
+      image: "/assets/facilities/slider-2.png",
       title: "Spa & Wellness",
       description: "Relaxing massage and wellness treatments",
     },

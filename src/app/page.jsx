@@ -33,7 +33,6 @@ useEffect(() => {
       amenities: ["King & Futon, Shower, Patio, Firepit, Swing"],
       description:
         "Partly Pet Friendly Rooms , If bringing a pet please call ahead",
-      price: "$ 294.11",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
     {
@@ -43,7 +42,6 @@ useEffect(() => {
       amenities: ["2 Full XL, King & Futon, Jacuzzi, Shower (Wheel Chair Accessible) , Patio, Fire pit, Swing"],
       description:
         "Pet Friendly Room",
-      price: "$353.05",
       priceColor: "bg-gray-900 hover:bg-gray-800 text-white",
       hasBookButton: true,
     },
@@ -54,7 +52,6 @@ useEffect(() => {
       amenities: ["Full XL & King, Jacuzzi Tub, & Shower, Patio, Fire Pit"],
       description:
         "Pet Friendly Room",
-      price: "$329.47",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     }, 
     {
@@ -64,7 +61,6 @@ useEffect(() => {
       amenities: ["Full XL & King, Jacuzzi Tub, & Shower, Patio, Fire Pit"],
       description:
         "Pet Friendly Room",
-      price: "$329.47",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     }, 
     {
@@ -74,7 +70,6 @@ useEffect(() => {
       amenities: ["Full XL & King, Jacuzzi Tub, & Shower, Patio, Fire Pit"],
       description:
         "Pet Friendly Room",
-      price: "$329.47",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     }, 
     

@@ -14,24 +14,31 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      text: "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisl. Aenean vulputate eleifend tellus.",
-      author: "Ram",
-      title: "Traveller",
-      year: "2018",
+      text: "My roommate, a friend and myself stayed here over Memorial Day weekend. We were attending a con in OKC and wanted to stay somewhere other than home. Its really close to the city, only about 15 minute drive and a good deal cheaper than what we would have paid at one of the hotels closer. The rooms were spacious, beautiful and very clean. The pool and hot tub were absolutely a delight, we got to relax and have some fun in our down time from the con and everything else we did this weekend. We were even able to bring our pup with us! It was over all an amazing experience with great comfort, good food and an amazingly sweet and attentive staff! Highly recommend staying here at least once!",
+      author: "Seras Alverna",
+      title: "Friends",
+      year: "2025",
     },
     {
       id: 2,
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      author: "Sarah",
-      title: "Business Executive",
+      text: "We had an amazing experience here. We wanted to stay somewhere to enjoy the con and we switched to this b&b because it was cheaper than the big hotels. The woman over it was so sweet even though we woke her up at 1 am when we got there due to scheduling on a website. I recommend calling for reservations but that was due to the website, not them. She was sweet and her and the others took great care of us!",
+      author: "Roda Stoat",
+      title: "Friends",
       year: "2023",
     },
     {
       id: 3,
-      text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
-      author: "Michael",
-      title: "Photographer",
-      year: "2023",
+      text: "This is a unique B&B close enough to the city but secluded for peace and relaxation. The owner was sweet and VERY friendly and hospitable. She was always there to attend to anything we wanted.The breakfast was good. The bacon was cooked perfectly and they will make you waffles if you ask.We loved the mornings on the balcony in our room to have coffee and look out at the natural landscape. The only thing I would change is the abundance of mirrors.",
+      author: "Brad Townsend",
+      title: "Couple",
+      year: "2024",
+    },
+    {
+      id: 4,
+      text: "Beautiful, quiet, secluded bed & breakfast.  The owner was as sweet as she can be & so helpful! Breakfast was delicious & hot. Coffee was awesome. Pool was fabulous. I got married on their gazebo & they were absolutely amazing & accommodating! They welcomed every happy moment for my special day!! They had a heater to keep it cozy for our friends & family. She Decorated my room so beautifully.  And this was all on Thanksgiving! They provided wonderful limo service to dinner & picked us up. Very at home feel & cozy ambience.  It was so peaceful & amazing.  Best day & stay ever.",
+      author: "Bridget Bell-Robertson",
+      title: "Couple",
+      year: "2024",
     },
   ];
 

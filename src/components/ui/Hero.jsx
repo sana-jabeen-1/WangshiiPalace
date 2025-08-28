@@ -24,6 +24,7 @@ const Hero = () => {
           text: "Talk To Us",
           href: "/contact-us",
         },
+        
       ],
     },
     {
@@ -37,9 +38,11 @@ const Hero = () => {
            href: "https://direct-book.com/properties/wangshichinapalacedirect?locale=en&referrer=canvas&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2025-07-22&checkOutDate=2025-07-23&trackPage=yes",
           openInNewWindow: true,
         },
+
         {
-          text: "Talk To Us",
-          href: "/contact-us",
+          text: "Accommodations",
+           href: "https://direct-book.com/properties/wangshichinapalacedirect?locale=en&referrer=canvas&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2025-07-22&checkOutDate=2025-07-23&trackPage=yes",
+          openInNewWindow: true,
         },
       ],
     },
@@ -49,11 +52,16 @@ const Hero = () => {
       description:
         "Discover the ideal balance of sophistication and comfort in our carefully curated spaces .",
       cta: [
-        {
-          text: "Accommodations",
+         {
+          text: "Book Now",
            href: "https://direct-book.com/properties/wangshichinapalacedirect?locale=en&referrer=canvas&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2025-07-22&checkOutDate=2025-07-23&trackPage=yes",
           openInNewWindow: true,
         },
+        {
+          text: "Talk To Us",
+          href: "/contact-us",
+        },
+        
       ],
     },
   ];

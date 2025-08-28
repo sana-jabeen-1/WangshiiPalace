@@ -7,14 +7,14 @@ const PhotoGallerySection = () => {
 
   const tabs = ["All photos", "Property and surroundings", "Rooms", "Events"];
 
-  const propertyPhotos = Array(18)
+  const propertyPhotos = Array(16)
     .fill()
     .map((_, index) => ({
       id: index + 1,
       image:
         index === 0
-          ? "/assets/gallery/property.avif"
-          : `/assets/gallery/property-${index + 1}.avif`,
+          ? "/assets/gallery/property.webp"
+          : `/assets/gallery/property-${index + 1}.webp`,
       category: "Property and surroundings",
       title: `Property View ${index + 1}`,
     }));
@@ -25,8 +25,8 @@ const PhotoGallerySection = () => {
       id: index + 1,
       image:
         index === 0
-          ? "/assets/gallery/room.avif"
-          : `/assets/gallery/room-${index + 1}.avif`,
+          ? "/assets/gallery/room.webp"
+          : `/assets/gallery/room-${index + 1}.webp`,
       category: "Rooms",
       title: `Room ${index + 1}`,
     }));
@@ -37,8 +37,8 @@ const PhotoGallerySection = () => {
       id: index + 1,
       image:
         index === 0
-          ? "/assets/gallery/event.avif"
-          : `/assets/gallery/event-${index + 1}.avif`,
+          ? "/assets/gallery/event.webp"
+          : `/assets/gallery/event-${index + 1}.webp`,
       category: "Events",
       title: `Event Space ${index + 1}`,
     }));

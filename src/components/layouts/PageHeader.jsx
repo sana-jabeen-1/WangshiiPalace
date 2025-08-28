@@ -15,7 +15,7 @@ const PageHeader = ({ backgroundImage, title, breadcrumb }) => {
       }}
     >
       {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/65 bg-opacity-40"></div>
+      <div className="absolute inset-0 bg-black/35 bg-opacity-40"></div>
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-center items-start">
