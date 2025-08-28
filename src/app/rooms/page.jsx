@@ -1,6 +1,7 @@
 import PageHeader from "@/components/layouts/PageHeader";
 import RoomsPricingSection from "@/components/molecules/Pricing";
 import RoomSection from "@/components/molecules/RoomDisplay";
+import RoomsPricingSectionn from "@/components/molecules/RoomsPricing";
 import React from "react";
 
 const Rooms = () => {
@@ -12,19 +13,16 @@ const Rooms = () => {
       amenities: ["King & Futon, Shower, Patio, Firepit, Swing"],
       description:
         "Partly Pet Friendly Rooms , If bringing a pet please call ahead",
-      price: "$110.0",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
     {
       id: 2,
-      title: "Family Room Type #5",
-      image: "/assets/pricing/room-2.png",
-      amenities: ["2 Full XL, King & Futon, Jacuzzi, Shower (Wheel Chair Accessible) , Patio, Fire pit, Swing"],
+     title: "Premier Room Type #8",
+      image: "/assets/pricing/room-7.png",
+      amenities: ["King & Futon, Shower, Balcony, Fire pit, /n Swing"],
       description:
-        "Pet Friendly Room",
-      price: "$165.0",
-      priceColor: "bg-gray-900 hover:bg-gray-800 text-white",
-      hasBookButton: true,
+        "Not Pet Friendly Rooms   ",
+      priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
     {
       id: 3,
@@ -33,7 +31,6 @@ const Rooms = () => {
       amenities: ["Full XL & King, Jacuzzi Tub, & Shower, Patio, Fire Pit"],
       description:
         "Pet Friendly Room",
-      price: "$110.0",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
     {
@@ -43,7 +40,6 @@ const Rooms = () => {
       amenities: ["Full XL & King, 2 Bath w/ Jacuzzi Tubs, No Balcony/No Patio "],
       description:
         "Not Pet Friendly Rooms",
-      price: "$110.0",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
     {
@@ -53,7 +49,6 @@ const Rooms = () => {
       amenities: ["Full XL, King & Futon, Jacuzzi Tub & Shower, Patio, Fire Pit "],
       description:
         "Pet Friendly Room",
-      price: "$110.0",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
     {
@@ -63,18 +58,17 @@ const Rooms = () => {
       amenities: ["Full XL & Futon, Jacuzzi Tub, Pool View"],
       description:
         "Not Pet-friendly rooms",
-      price: "$110.0",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
      {
       id: 7,
-      title: "Premier Room Type #8",
-      image: "/assets/pricing/room-7.png",
-      amenities: ["King & Futon, Shower, Balcony, Fire pit, Swing"],
+      title: "Family Room Type #5",
+      image: "/assets/pricing/room-2.png",
+      amenities: ["2 Full XL, King & Futon, Jacuzzi, Shower (Wheel Chair Accessible) , Patio, Fire pit, Swing"],
       description:
-        "Not Pet Friendly Rooms",
-      price: "$110.0",
-      priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
+        "Pet Friendly Room",
+      priceColor: "bg-gray-900 hover:bg-gray-800 text-white",
+      hasBookButton: true,
     },
       {
       id: 8,
@@ -83,7 +77,6 @@ const Rooms = () => {
       amenities: ["2 Full XL, King, Futon & Couch, Jacuzzi Tub, Balcony, Fire pit, Swing"],
       description:
         "Not Pet Friendly Room",
-      price: "$110.0",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
     {
@@ -93,7 +86,6 @@ const Rooms = () => {
       amenities: ["Full XL, King & Futon, Jacuzzi Tub & Shower, Bidet, Balcony, Firepit, Swing"],
       description:
         "Not Pet Friendly Room",
-      price: "$110.0",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
     {
@@ -103,7 +95,6 @@ const Rooms = () => {
       amenities: ["King & Futon, Shower, Jacuzzi Tub, Patio"],
       description:
         "Pet Friendly Room",
-      price: "$110.0",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
      {
@@ -113,7 +104,6 @@ const Rooms = () => {
       amenities: ["2 Bedroom, King & Queen Beds, Shower, Kitchen, Living Room"],
       description:
         "",
-      price: "$110.0",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
     {
@@ -123,7 +113,6 @@ const Rooms = () => {
       amenities: ["2 Full XL, Shower, Jacuzzi Tub"],
       description:
         "NOT a pet-friendly room",
-      price: "$110.0",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
   ];
@@ -134,7 +123,7 @@ const Rooms = () => {
         title={"Rooms"}
         backgroundImage={"/assets/displayRooms/rooms-b.webp"}
       />
-      <RoomsPricingSection rooms={rooms} title={"Rooms"} />
+      <RoomsPricingSectionn rooms={rooms} title={"Rooms"} />
     </div>
   );
 };
