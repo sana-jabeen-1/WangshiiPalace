@@ -2,6 +2,7 @@ import PageHeader from "@/components/layouts/PageHeader";
 import RoomsPricingSection from "@/components/molecules/Pricing";
 import RoomSection from "@/components/molecules/RoomDisplay";
 import RoomsPricingSectionn from "@/components/molecules/RoomsPricing";
+import RoomsPricingSectionn from "@/components/molecules/RoomsPricing";
 import React from "react";
 
 const Rooms = () => {
@@ -22,9 +23,10 @@ const Rooms = () => {
       image: "/assets/pricing/room-7.png",
       amenities: ["King & Futon, Shower, Balcony, Fire pit, /n Swing"],
       description:
-        "Not Pet Friendly Rooms   ",
-      priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
-       link: "/premier",
+        "Pet Friendly Room",
+      price: "$165.0",
+      priceColor: "bg-gray-900 hover:bg-gray-800 text-white",
+      hasBookButton: true,
     },
     {
       id: 3,
@@ -68,10 +70,9 @@ const Rooms = () => {
     },
      {
       id: 7,
-       link: "/familyfive",
-      title: "Family Room Type #5",
-      image: "/assets/pricing/room-2.png",
-      amenities: ["2 Full XL, King & Futon, Jacuzzi, Shower (Wheel Chair Accessible) , Patio, Fire pit, Swing"],
+      title: "Premier Room Type #8",
+      image: "/assets/pricing/room-7.png",
+      amenities: ["King & Futon, Shower, Balcony, Fire pit, Swing"],
       description:
         "Pet Friendly Room",
       priceColor: "bg-gray-900 hover:bg-gray-800 text-white",

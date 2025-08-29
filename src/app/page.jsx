@@ -47,7 +47,7 @@ useEffect(() => {
     },
     {
       id: 3,
-      title: "Quadruple Room Type #4",
+      title: "Premier Room Type #8",
       image: "/assets/pricing/room-3.png",
       amenities: ["Full XL & King, Jacuzzi Tub, & Shower, Patio, Fire Pit"],
       description:
@@ -56,7 +56,7 @@ useEffect(() => {
     }, 
     {
       id: 4,
-      title: "Quadruple Room Type #4",
+      title: "Family Room 2 Bath Type #1",
       image: "/assets/pricing/room-3.png",
       amenities: ["Full XL & King, Jacuzzi Tub, & Shower, Patio, Fire Pit"],
       description:
@@ -65,7 +65,7 @@ useEffect(() => {
     }, 
     {
       id: 5,
-      title: "Quadruple Room Type #4",
+      title: "Quadruple Room Type #6",
       image: "/assets/pricing/room-3.png",
       amenities: ["Full XL & King, Jacuzzi Tub, & Shower, Patio, Fire Pit"],
       description:

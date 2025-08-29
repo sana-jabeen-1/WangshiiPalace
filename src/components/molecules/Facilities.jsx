@@ -26,12 +26,12 @@ const FacilitiesSection = () => {
       description: "Exquisite restaurant with premium cuisine",
     },
     {
-      image: "/assets/facilities/slider-3.webp",
+      image: "/assets/facilities/slider-5.jpg",
       title: "Wellness Center",
       description: "Complete wellness and fitness facilities",
     },
     {
-      image: "/assets/facilities/slider-5.webp",
+      image: "/assets/facilities/slider-6.jpg",
       title: "Fine Dining",
       description: "Exquisite restaurant with premium cuisine",
     },
