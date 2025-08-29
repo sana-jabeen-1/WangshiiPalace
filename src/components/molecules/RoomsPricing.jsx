@@ -1,4 +1,4 @@
-"use client";
+"use client";  // Add this to make this component a Client Component
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,11 @@ const RoomsPricingSectionn = ({ title, rooms }) => {
     const bookingUrl = `https://direct-book.com/properties/wangshichinapalacedirect?locale=en&referrer=canvas&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2025-07-22&checkOutDate=2025-07-23&trackPage=yes`;
     window.open(bookingUrl, "_blank");
   };
+
+  // Ensure rooms is an array before calling map
+  if (!Array.isArray(rooms)) {
+    return <div>No rooms available</div>;  // Handle the case where rooms data is missing or invalid
+  }
 
   return (
     <section className="py-16 font-lora font-light">
@@ -24,12 +29,14 @@ const RoomsPricingSectionn = ({ title, rooms }) => {
           {rooms.map((room) => (
             <div key={room.id} className="w-full flex flex-col items-center justify-center">
               {/* Link to the room's detail page */}
-             
+              <Link href={room.link || "#"}>
                 <div className="relative w-full h-64 overflow-hidden group">
+                  {/* Use layout="intrinsic" to allow for better image scaling */}
                   <Image
                     src={room.image || "/placeholder.svg"}
                     alt={room.title}
-                    layout="fill"
+                    width={500}  // Set width as per your design
+                    height={250}  // Set height as per your design
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-100 transition-opacity duration-300 group-hover:opacity-100">
@@ -41,7 +48,7 @@ const RoomsPricingSectionn = ({ title, rooms }) => {
                     </Button>
                   </div>
                 </div>
-             
+              </Link>
 
               {/* Room Details */}
               <div className="p-6 bg-[#ffffff] w-[90%] -mt-16 z-10 relative">

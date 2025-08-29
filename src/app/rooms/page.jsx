@@ -20,9 +20,8 @@ const Rooms = () => {
     },
     {
       id: 2,
-      
-      
      title: "Premier Room Type #8",
+      link: "/premier",
       image: "/assets/pricing/room-7.png",
       amenities: ["King & Futon, Shower, Balcony, Fire pit, /n Swing"],
       description:
