@@ -22,9 +22,9 @@ const RoomsPricingSectionn = ({ title, rooms }) => {
         {/* Room Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 py-4">
           {rooms.map((room) => (
-            <Link href={room.link} key={room.id}>
-              <div className="w-full flex flex-col items-center justify-center cursor-pointer">
-                {/* Room Image */}
+            <div key={room.id} className="w-full flex flex-col items-center justify-center">
+              {/* Link to the room's detail page */}
+             
                 <div className="relative w-full h-64 overflow-hidden group">
                   <Image
                     src={room.image || "/placeholder.svg"}
@@ -41,26 +41,26 @@ const RoomsPricingSectionn = ({ title, rooms }) => {
                     </Button>
                   </div>
                 </div>
+             
 
-                {/* Room Details */}
-                <div className="p-6 bg-[#ffffff] w-[90%] -mt-16 z-10 relative">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">{room.title}</h3>
+              {/* Room Details */}
+              <div className="p-6 bg-[#ffffff] w-[90%] -mt-16 z-10 relative">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-3">{room.title}</h3>
 
-                  {/* Amenities */}
-                  <div className="flex items-center gap-2 mb-4">
-                    {room.amenities.map((amenity, index) => (
-                      <span key={amenity} className="text-secondary text-roboto font-medium text-lg">
-                        {amenity}
-                        {index < room.amenities.length - 1 && <span className="mx-2">-</span>}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Description */}
-                  <p className="text-gray-600 text-sm leading-relaxed mb-6">{room.description}</p>
+                {/* Amenities */}
+                <div className="flex items-center gap-2 mb-4">
+                  {room.amenities.map((amenity, index) => (
+                    <span key={amenity} className="text-secondary text-roboto font-medium text-lg">
+                      {amenity}
+                      {index < room.amenities.length - 1 && <span className="mx-2">-</span>}
+                    </span>
+                  ))}
                 </div>
+
+                {/* Description */}
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">{room.description}</p>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

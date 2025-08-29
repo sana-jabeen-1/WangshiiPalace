@@ -2,8 +2,9 @@ import PageHeader from "@/components/layouts/PageHeader";
 import RoomsPricingSection from "@/components/molecules/Pricing";
 import RoomSection from "@/components/molecules/RoomDisplay";
 import RoomsPricingSectionn from "@/components/molecules/RoomsPricing";
-
 import React from "react";
+
+
 
 const Rooms = () => {
   const rooms = [
@@ -19,6 +20,8 @@ const Rooms = () => {
     },
     {
       id: 2,
+      
+      
      title: "Premier Room Type #8",
       image: "/assets/pricing/room-7.png",
       amenities: ["King & Futon, Shower, Balcony, Fire pit, /n Swing"],
