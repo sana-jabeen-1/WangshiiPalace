@@ -2,7 +2,7 @@ import PageHeader from "@/components/layouts/PageHeader";
 import RoomsPricingSection from "@/components/molecules/Pricing";
 import RoomSection from "@/components/molecules/RoomDisplay";
 import RoomsPricingSectionn from "@/components/molecules/RoomsPricing";
-import RoomsPricingSectionn from "@/components/molecules/RoomsPricing";
+
 import React from "react";
 
 const Rooms = () => {

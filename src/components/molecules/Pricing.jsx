@@ -1,7 +1,17 @@
 "use client";
+
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const RoomsPricingSection = ({ title, rooms }) => {
   const swiperRef = useRef(null);
@@ -11,6 +21,33 @@ const RoomsPricingSection = ({ title, rooms }) => {
       "https://direct-book.com/properties/wangshichinapalacedirect?locale=en&referrer=canvas&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2025-07-22&checkOutDate=2025-07-23&trackPage=yes";
     window.open(bookingUrl, "_blank");
   };
+
+  // Handle the previous and next slide navigation
+  const handlePrevSlide = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
+    }
+  };
+
+  const handleNextSlide = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
+    }
+  };
+
+    // Add isMobile state and check window width on mount and resize
+  const [isMobile, setIsMobile] = useState(false);
+
+ useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <section className="py-16">
@@ -35,12 +72,55 @@ const RoomsPricingSection = ({ title, rooms }) => {
           </div>
         </div>
 
-        {/* Horizontal Scrollable Room Cards */}
-        <div className="flex overflow-x-auto gap-8 py-4 scroll-smooth">
-          {rooms.map((room) => (
-            <div
-              key={room.id}
-              className="flex-shrink-0 w-[calc(33.33%-2rem)] flex flex-col items-center justify-center"
+        {/* Swiper Slider */}
+        <div className="relative">
+          {/* Custom Navigation Buttons */}
+          <button
+            onClick={handlePrevSlide}
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-yellow-600 hover:bg-yellow-700 text-white p-3 rounded-none transition-colors duration-200"
+            aria-label="Previous slide"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+
+          <button
+            onClick={handleNextSlide}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-yellow-600 hover:bg-yellow-700 text-white p-3 rounded-none transition-colors duration-200"
+            aria-label="Next slide"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+
+          {/* Swiper Container */}
+          <div className="hidden lg:block lg:px-16">
+            <Swiper
+              modules={[Navigation, Pagination, Autoplay]}
+              spaceBetween={30}
+              slidesPerView={1}
+              loop={true}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false, 
+              }}
+              breakpoints={{
+               640: {
+                  slidesPerView: 1, // 1 slide per view on mobile
+                  
+                },
+                768: {
+                  slidesPerView: 2, // 2 slides per view on tablet
+                 
+                },
+                1024: {
+                  slidesPerView: 3, // 3 slides per view on desktop
+                  
+                },
+                
+              }}
+              onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              className="facilities-swiper"
             >
               {rooms.map((room, idx) => (
                 <SwiperSlide key={idx}>
