@@ -50,7 +50,7 @@ const RoomsPricingSection = ({ title, rooms }) => {
   }, []);
 
   return (
-    <section className="py-16">
+    <section className="py-6">
       <div className="lg:container lg:mx-auto lg:px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -73,11 +73,11 @@ const RoomsPricingSection = ({ title, rooms }) => {
         </div>
 
         {/* Swiper Slider */}
-        <div className="relative">
+        <div className="flex">
           {/* Custom Navigation Buttons */}
           <button
             onClick={handlePrevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-yellow-600 hover:bg-yellow-700 text-white p-3 rounded-none transition-colors duration-200"
+            className="absolute  left-0 top-1/2 -translate-y-1/2  bg-yellow-600 hover:bg-yellow-700 text-white p-3 rounded-none transition-colors duration-200"
             aria-label="Previous slide"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -85,17 +85,18 @@ const RoomsPricingSection = ({ title, rooms }) => {
 
           <button
             onClick={handleNextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-yellow-600 hover:bg-yellow-700 text-white p-3 rounded-none transition-colors duration-200"
+            className="absolute right-0 top-1/2 -translate-y-1/2  bg-yellow-600 hover:bg-yellow-700 text-white p-3 rounded-none transition-colors duration-200"
             aria-label="Next slide"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
 
           {/* Swiper Container */}
-          <div className="hidden lg:block lg:px-16">
+          <div className="w-full lg:px-16">
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={30}
+              
+              spaceBetween={isMobile ? 20 : 10}
               slidesPerView={1}
               loop={true}
               autoplay={{
@@ -120,12 +121,12 @@ const RoomsPricingSection = ({ title, rooms }) => {
               onSwiper={(swiper) => {
                 swiperRef.current = swiper;
               }}
-              className="facilities-swiper"
+              className="facilities w-80 md:w-[650px] lg:w-[1200px] flex items-center justify-center gap-15 "
             >
               {rooms.map((room, idx) => (
                 <SwiperSlide key={idx}>
-                  <div className="bg-white overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-none">
-                    <div className="relative lg:h-64">
+                  <div className="bg-white overflow-auto shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-none">
+                    <div className="relative w-full h-64 md:h-72 lg:h-75">
                       <Image
                         src={room.image || "/placeholder.svg"}
                         alt={room.title}
@@ -135,8 +136,8 @@ const RoomsPricingSection = ({ title, rooms }) => {
                       />
                     </div>
                     {/* Room Details */}
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    <div className="p-6 overflow-auto">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2 ">
                         {room.title}
                       </h3>
                       <p className="text-gray-600 text-sm mb-4">

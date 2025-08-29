@@ -14,7 +14,7 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      text: "My roommate, a friend and myself stayed here over Memorial Day weekend. We were attending a con in OKC and wanted to stay somewhere other than home. Its really close to the city, only about 15 minute drive and a good deal cheaper than what we would have paid at one of the hotels closer. The rooms were spacious, beautiful and very clean. The pool and hot tub were absolutely a delight, we got to relax and have some fun in our down time from the con and everything else we did this weekend. We were even able to bring our pup with us! It was over all an amazing experience with great comfort, good food and an amazingly sweet and attentive staff! Highly recommend staying here at least once!",
+      text: "My roommate, a friend and myself stayed here over Memorial Day weekend. We were attending a con in OKC and wanted to stay somewhere other than home. Its really close to the city, only about 15 minute drive and a good deal cheaper than what we would have paid at one of the hotels closer. The rooms were spacious, beautiful and very clean. The pool and hot tub were absolutely a delight.",
       author: "Seras Alverna",
       title: "Friends",
       year: "2025",
@@ -28,7 +28,7 @@ const TestimonialsSection = () => {
     },
     {
       id: 3,
-      text: "This is a unique B&B close enough to the city but secluded for peace and relaxation. The owner was sweet and VERY friendly and hospitable. She was always there to attend to anything we wanted.The breakfast was good. The bacon was cooked perfectly and they will make you waffles if you ask.We loved the mornings on the balcony in our room to have coffee and look out at the natural landscape. The only thing I would change is the abundance of mirrors.",
+      text: "This is a unique B&B close enough to the city but secluded for peace and relaxation. The owner was sweet and VERY friendly and hospitable. She was always there to attend to anything we wanted.The breakfast was good. The bacon was cooked perfectly and they will make you waffles if you ask.We loved the mornings on the balcony in our room to have coffee and look out at the natural landscape.",
       author: "Brad Townsend",
       title: "Couple",
       year: "2024",
@@ -44,7 +44,7 @@ const TestimonialsSection = () => {
 
   return (
     <section
-      className="relative h-[600px] w-full bg-cover bg-center bg-no-repeat"
+      className=" w-full bg-cover bg-center bg-no-repeat h-auto lg:h-[600px]"
       style={{
         backgroundImage: `url('/assets/resources/testimonials-bg.jpg')`,
       }}
@@ -52,7 +52,7 @@ const TestimonialsSection = () => {
       {/* Background overlay for better text readability */}
       <div className="absolute inset-0 bg-black/50 bg-opacity-20"></div>
 
-      <div className="relative z-10 h-full flex items-center justify-center">
+      <div className="relative z-10 flex items-center justify-center py-6 lg:py-12">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <Swiper

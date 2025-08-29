@@ -32,7 +32,7 @@ useEffect(() => {
       image: "/assets/pricing/room.png",
       amenities: ["King & Futon, Shower, Patio, Firepit, Swing"],
       description:
-        "Partly Pet Friendly Rooms , If bringing a pet please call ahead",
+        "Partly Pet Friendly Rooms ",
       priceColor: "bg-yellow-600 hover:bg-yellow-700 text-white",
     },
     {

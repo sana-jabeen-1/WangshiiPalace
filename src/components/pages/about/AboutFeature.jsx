@@ -30,7 +30,7 @@ const AboutFeature = () => {
   ];
 
   return (
-    <div className="p-20 w-full flex flex-col items-center justify-center">
+    <div className="p-15 w-full flex flex-col items-center justify-center">
       <div className="flex items-center justify-center flex-wrap gap-6 w-3/4 ">
         {features.map(({ title, iconImage }, index) => (
           <AboutFeatureCard
@@ -41,7 +41,7 @@ const AboutFeature = () => {
           />
         ))}
       </div>
-      <div className="w-4/6 bg-secondary h-[0.2px] my-28" />
+      {/* <div className="w-4/6 bg-secondary h-[0.2px] my-10" /> */}
     </div>
   );
 };
@@ -50,15 +50,16 @@ export default AboutFeature;
 
 const AboutFeatureCard = ({ title, iconImage, index }) => {
   return (
+    
     <section className="flex flex-col items-center">
       <section className="flex flex-row-reverse items-center">
-        <div className="w-[0.2px] h-28 bg-secondary" />
+         {index >9 &&<div className="w-[0.2px] h-28 bg-secondary" />}
         <div className="w-[390px] h-[177px] flex flex-col items-center justify-center gap-3">
           <Image width={67} height={55} src={iconImage} alt={title} />
           <h3 className="text-xl font-lora font-light">{title}</h3>
         </div>
       </section>
-      {index < 3 && <div className="w-80 h-[0.2px] bg-secondary" />}
+      {index <6 && <div className="w-80 h-[0.2px] bg-secondary" />}
     </section>
   );
 };

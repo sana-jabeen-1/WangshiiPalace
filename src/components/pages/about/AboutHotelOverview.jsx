@@ -19,7 +19,7 @@ const AboutHotelOverviewSection = () => {
       image: "/assets/about/room.webp",
       title: "Luxury Suite",
       description:
-        "Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
+        "The WangShi China Palace Bed and Breakfast Inn offers delightfully comfortable accommodations.",
       category: "Accommodation",
     },
     {
@@ -27,7 +27,7 @@ const AboutHotelOverviewSection = () => {
       image: "/assets/about/room-2.webp",
       title: "Deluxe Room",
       description:
-        "Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.",
+        "The WangShi China Palace Bed and Breakfast Inn offers delightfully comfortable accommodations.",
       category: "Accommodation",
     },
     {
@@ -35,7 +35,7 @@ const AboutHotelOverviewSection = () => {
       image: "/assets/about/room-3.webp",
       title: "Premium Suite",
       description:
-        "Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate.",
+        "The WangShi China Palace Bed and Breakfast Inn offers delightfully comfortable accommodations.",
       category: "Accommodation",
     },
   ];

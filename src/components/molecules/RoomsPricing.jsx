@@ -51,7 +51,7 @@ const RoomsPricingSectionn = ({ title, rooms }) => {
               </Link>
 
               {/* Room Details */}
-              <div className="p-6 bg-[#ffffff] w-[90%] -mt-16 z-10 relative">
+              <div className="p-6 bg-[#ffffff] w-[90%] -mt-16 z-10 relative h-[220px] overflow-y-auto">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-3">{room.title}</h3>
 
                 {/* Amenities */}
