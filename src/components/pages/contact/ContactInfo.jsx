@@ -24,7 +24,7 @@ const ContactInfoSection = () => {
     {
       icon: <MapPin className="w-6 h-6 text-secondary" />,
       label: "Address",
-      value: "HGHR+9G Northeast \n Oklahoma City, \n Oklahoma City, OK, USA",
+      value: "3108 E Hefner Rd \n Oklahoma City, \n OK 73131, United States",
       href: "https://maps.app.goo.gl/JStsMjMF6FgMSKzi9",
     },
   ];

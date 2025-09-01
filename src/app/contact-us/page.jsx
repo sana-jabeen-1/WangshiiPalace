@@ -7,7 +7,7 @@ export default function ContactUsPage() {
   return (
     <main>
       <PageHeader
-        backgroundImage="/assets/facilities/contact.png"
+        backgroundImage="/assets/facilities/contact.webp"
         title="Contact Us"
         breadcrumb={"Contact Us"}
       />

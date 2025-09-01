@@ -76,13 +76,13 @@ const AttractionCard = ({
         )}
 
         {/* CTA Button */}
-        <Link
+        {/* <Link
           href={`/attractions/${slug}`}
           className="inline-flex items-center gap-2 text-secondary hover:text-gray-900 font-lora font-light text-sm transition-colors duration-200 group/link"
         >
           View Details
           <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

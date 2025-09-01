@@ -54,7 +54,7 @@ export default function PromotionsPage() {
   return (
     <main>
       <PageHeader
-        backgroundImage="/assets/facilities/prom-img.png"
+        backgroundImage="/assets/facilities/prom-img.webp"
         title="Promotions"
         breadcrumbs={breadcrumbs}
       />
@@ -76,8 +76,8 @@ export default function PromotionsPage() {
 
           {/* Promotions Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {promotions.map((promotion) => (
-              <PromotionCard key={promotion.id} {...promotion} />
+            {promotions.map((promotionn) => (
+              <PromotionCard key={promotionn.id} {...promotionn} />
             ))}
           </div>
         </div>

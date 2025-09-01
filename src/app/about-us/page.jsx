@@ -11,7 +11,7 @@ const About = () => {
       <PageHeader
         title={"About Us"}
         breadcrumb={""}
-        backgroundImage={"/assets/about/about-bg.jpg"}
+        backgroundImage={"/assets/about/about-bg.webp"}
       />
       <AboutFeature />
       <AboutHotelOverviewSection />

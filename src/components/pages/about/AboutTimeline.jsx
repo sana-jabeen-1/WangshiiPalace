@@ -5,33 +5,33 @@ const AboutTimelineSection = () => {
     {
       id: 1,
       title: "The Beginning",
-      image: "/assets/about/timeline.jpg",
+      image: "/assets/about/timeline.webp",
       description:
-        "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu.",
+        "WangShi China Palace was founded by Dow McCarty and Victoria McCarty . This husband-wife duo turned their home located in Oklahoma City, into a relaxing Bed and Breakfast Inn for Guests.",
       position: "right",
     },
     {
       id: 2,
       title: "The Beginning",
-      image: "/assets/about/timeline-2.jpg",
+      image: "/assets/about/timeline-2.webp",
       description:
-        "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu.",
+        "WangShi China Palace was founded by Dow McCarty and Victoria McCarty .This husband-wife duo turned their home located in Oklahoma City, into a relaxing Bed and Breakfast Inn for Guests.",
       position: "left",
     },
     {
       id: 3,
       title: "Member In Hotel Association",
-      image: "/assets/about/timeline-3.jpg",
+      image: "/assets/about/timeline-3.webp",
       description:
-        "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.",
+        "WangShi China Palace was founded by Dow McCarty and Victoria McCarty .This husband-wife duo turned their home located in Oklahoma City, into a relaxing Bed and Breakfast Inn for Guests.",
       position: "right",
     },
     {
       id: 4,
       title: "International Standards",
-      image: "/assets/about/timeline-4.jpg",
+      image: "/assets/about/timeline-4.webp",
       description:
-        "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.",
+        "WangShi China Palace was established by Dow and Victoria McCarty, a dynamic husband-and-wife team. They transformed their private residence in Oklahoma City into a serene Bed and Breakfast Inn.  ",
       position: "left",
     },
   ];
@@ -43,10 +43,10 @@ const AboutTimelineSection = () => {
           {/* Timeline Container */}
           <div className="relative">
             {/* Vertical Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-300"></div>
+            
 
             {/* Timeline Items */}
-            <div className="space-y-16">
+            <div className="space-y-10">
               {timelineItems.map((item, index) => (
                 <div key={item.id} className="relative">
                   {/* Timeline Dot */}
@@ -59,17 +59,18 @@ const AboutTimelineSection = () => {
                     }`}
                   >
                     {/* Image Side */}
-                    <div className="w-1/2 px-2 md:px-6 lg:px-8">
+                    <div className="w-1/2 px-2 md:px-7 lg:px-8">
                       <div
                         className={`${
                           item.position === "left" ? "ml-auto" : "mr-auto"
                         } w-full lg:max-w-md`}
                       >
-                        <div className="relative w-36 h-36 md:w-80 md:h-64 lg:w-full lg:h-64 overflow-hidden shadow-lg">
+                        <div className="relative w-36 h-36 md:w-100 md:h-36 lg:w-full lg:h-64 overflow-hidden shadow-lg">
                           <Image
                             src={item.image || "/placeholder.svg"}
                             alt={item.title}
-                            fill
+                             layout="fill"  // Ensure the image fills its container
+                             objectFit="cover"
                             className="object-cover"
                           />
                         </div>

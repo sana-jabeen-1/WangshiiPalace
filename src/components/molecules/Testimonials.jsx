@@ -14,30 +14,37 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      text: "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisl. Aenean vulputate eleifend tellus.",
-      author: "Ram",
-      title: "Traveller",
-      year: "2018",
+      text: "My roommate, a friend and myself stayed here over Memorial Day weekend. We were attending a con in OKC and wanted to stay somewhere other than home. Its really close to the city, only about 15 minute drive and a good deal cheaper than what we would have paid at one of the hotels closer. The rooms were spacious, beautiful and very clean. The pool and hot tub were absolutely a delight.",
+      author: "Seras Alverna",
+      title: "Friends",
+      year: "2025",
     },
     {
       id: 2,
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      author: "Sarah",
-      title: "Business Executive",
+      text: "We had an amazing experience here. We wanted to stay somewhere to enjoy the con and we switched to this b&b because it was cheaper than the big hotels. The woman over it was so sweet even though we woke her up at 1 am when we got there due to scheduling on a website. I recommend calling for reservations but that was due to the website, not them. She was sweet and her and the others took great care of us!",
+      author: "Roda Stoat",
+      title: "Friends",
       year: "2023",
     },
     {
       id: 3,
-      text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
-      author: "Michael",
-      title: "Photographer",
-      year: "2023",
+      text: "This is a unique B&B close enough to the city but secluded for peace and relaxation. The owner was sweet and VERY friendly and hospitable. She was always there to attend to anything we wanted.The breakfast was good. The bacon was cooked perfectly and they will make you waffles if you ask.We loved the mornings on the balcony in our room to have coffee and look out at the natural landscape.",
+      author: "Brad Townsend",
+      title: "Couple",
+      year: "2024",
+    },
+    {
+      id: 4,
+      text: "Beautiful, quiet, secluded bed & breakfast.  The owner was as sweet as she can be & so helpful! Breakfast was delicious & hot. Coffee was awesome. Pool was fabulous. I got married on their gazebo & they were absolutely amazing & accommodating! They welcomed every happy moment for my special day!! They had a heater to keep it cozy for our friends & family. She Decorated my room so beautifully.  And this was all on Thanksgiving! They provided wonderful limo service to dinner & picked us up. Very at home feel & cozy ambience.  It was so peaceful & amazing.  Best day & stay ever.",
+      author: "Bridget Bell-Robertson",
+      title: "Couple",
+      year: "2024",
     },
   ];
 
   return (
     <section
-      className="relative h-[600px] w-full bg-cover bg-center bg-no-repeat"
+      className=" w-full bg-cover bg-center bg-no-repeat h-auto lg:h-[600px]"
       style={{
         backgroundImage: `url('/assets/resources/testimonials-bg.jpg')`,
       }}
@@ -45,7 +52,7 @@ const TestimonialsSection = () => {
       {/* Background overlay for better text readability */}
       <div className="absolute inset-0 bg-black/50 bg-opacity-20"></div>
 
-      <div className="relative z-10 h-full flex items-center justify-center">
+      <div className="relative z-10 flex items-center justify-center py-6 lg:py-12">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <Swiper

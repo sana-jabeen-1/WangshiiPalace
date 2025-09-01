@@ -19,7 +19,7 @@ const BreakfastMenuSection = () => {
       name: "Asian Noodle Salad",
       image: "/assets/breakfast/food.jpg",
       description:
-        "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,",
+        "A vibrant and flavorful salad with tender noodles, fresh veggies, and a zesty Asian-inspired dressing.",
       
     },
     {
@@ -27,7 +27,7 @@ const BreakfastMenuSection = () => {
       name: "Chopped Romaine",
       image: "/assets/breakfast/food-2.jpg",
       description:
-        "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,",
+        "A fresh and crisp base of chopped Romaine lettuce, perfect for any salad.",
       
     },
     {
@@ -35,7 +35,7 @@ const BreakfastMenuSection = () => {
       name: "Roma Vegetables",
       image: "/assets/breakfast/food-3.jpg",
       description:
-        "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,",
+        "A colorful mix of fresh Roma vegetables, offering a delightful crunch and natural sweetness in every bite.",
       
     },
     {
@@ -43,7 +43,7 @@ const BreakfastMenuSection = () => {
       name: "Toasted Pecan Caramel",
       image: "/assets/breakfast/food-4.jpg",
       description:
-        "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,",
+        "A rich blend of toasted pecans and velvety caramel, creating a perfect balance of nutty and sweet flavors.",
       
     },
     {
@@ -51,7 +51,7 @@ const BreakfastMenuSection = () => {
       name: "Bok Chow Slaw",
       image: "/assets/breakfast/food-5.jpg",
       description:
-        "Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,",
+        "A crisp and tangy slaw made with fresh bok choy, offering a delightful crunch and vibrant flavors.",
      
     },
   ];
@@ -83,10 +83,10 @@ const BreakfastMenuSection = () => {
   }, []);
 
   return (
-    <section className="py-16">
+    <section className="py-10">
       <div className=" px-6">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-9">
           <h2 className="text-4xl font-lora font-light text-gray-800 mb-8">
             Breakfast
           </h2>
@@ -134,11 +134,11 @@ const BreakfastMenuSection = () => {
               onSwiper={(swiper) => {
                 swiperRef.current = swiper;
               }}
-              className="breakfast-menu-swiper w-80 md:w-[650px] lg:w-[1800px] flex items-center justify-center gap-10 lg:gap-8"
+              className="breakfast-menu-swiper w-80 md:w-[650px] lg:w-[1800px] flex items-center justify-center gap-5 lg:gap-8"
             >
               {breakfastItems.map((item) => (
                 <SwiperSlide key={item.id}>
-                  <div className="bg-white overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 md:w-[250px] lg:w-[350px] lg:h-[537px] flex flex-col md:ml-10 lg:ml-10">
+                  <div className="bg-white overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                     {/* Food Image */}
                     <div className="relative w-96 h-72 overflow-hidden flex-shrink-0">
                       <Image

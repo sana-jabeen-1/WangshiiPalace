@@ -12,7 +12,7 @@ const WhyHireUsSection = () => {
     },
     {
       image: {
-        src: "/assets/hire/image-2.jpg",
+        src: "/assets/hire/immg.png",
         alt: "Professional Staff - Hotel staff providing excellent service",
       },
       title: "Professional Staff",

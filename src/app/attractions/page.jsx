@@ -127,7 +127,7 @@ export default function AttractionsPage() {
   return (
     <main>
       <PageHeader
-        backgroundImage="/assets/facilities/restaurants.png"
+        backgroundImage="/assets/facilities/restaurants.webp"
         title="Attractions & Restaurants"
         breadcrumb={"Attractions & Restaurants"}
       />

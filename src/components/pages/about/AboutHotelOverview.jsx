@@ -16,26 +16,26 @@ const AboutHotelOverviewSection = () => {
   const roomImages = [
     {
       id: 1,
-      image: "/assets/about/room.jpg",
+      image: "/assets/about/room.webp",
       title: "Luxury Suite",
       description:
-        "Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
+        "The WangShi China Palace Bed and Breakfast Inn offers delightfully comfortable accommodations.",
       category: "Accommodation",
     },
     {
       id: 2,
-      image: "/assets/about/room-2.jpg",
+      image: "/assets/about/room-2.webp",
       title: "Deluxe Room",
       description:
-        "Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.",
+        "The WangShi China Palace Bed and Breakfast Inn offers delightfully comfortable accommodations.",
       category: "Accommodation",
     },
     {
       id: 3,
-      image: "/assets/about/room-3.jpg",
+      image: "/assets/about/room-3.webp",
       title: "Premium Suite",
       description:
-        "Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate.",
+        "The WangShi China Palace Bed and Breakfast Inn offers delightfully comfortable accommodations.",
       category: "Accommodation",
     },
   ];
@@ -163,7 +163,7 @@ const AboutHotelOverviewSection = () => {
             <div className="mb-12">
               <div className="relative h-96 lg:h-[500px] overflow-hidden">
                 <Image
-                  src="/assets/about/hotel.jpg"
+                  src="/assets/about/hotel.webp"
                   alt="Beautiful hotel courtyard with white architecture and arches"
                   fill
                   className="object-cover"

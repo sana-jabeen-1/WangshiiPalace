@@ -7,19 +7,19 @@ const RoomSection = () => {
   const roomImages = [
     {
       id: 1,
-      src: "/assets/displayRooms/room.png",
+      src: "/assets/displayRooms/room.webp",
       alt: "Luxury bedroom with tufted headboard and seating area",
       title: "Master Bedroom Suite",
     },
     {
       id: 2,
-      src: "/assets/displayRooms/room-2.jpg",
+      src: "/assets/displayRooms/roomm.webp",
       alt: "Modern living room with sofa and contemporary decor",
       title: "Living Room Area",
     },
     {
       id: 3,
-      src: "/assets/displayRooms/room-3.png",
+      src: "/assets/displayRooms/room-3.webp",
       alt: "Elegant bedroom with modern styling and warm lighting",
       title: "Premium Room View",
     },
