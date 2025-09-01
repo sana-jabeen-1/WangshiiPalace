@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const RelaxSection = () => {
   return (
-    <section className="flex flex-col lg:flex-row mt-72 lg:mt-0 justify-center items-center lg:mx-auto lg:max-w-7xl gap-10 lg:pl-5">
+    <section className="flex flex-col lg:flex-row mt-72 lg:mt-0 justify-center items-center lg:mx-auto lg:max-w-7xl lg:gap-10 gap-5 lg:pl-5">
       {/* Left Content */}
       <div className="space-y-5 text-justify w-3/4 lg:w-1/2">
         <div className="space-y-4">
